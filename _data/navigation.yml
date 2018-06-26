@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -11,3 +9,19 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   #
+
+categoryindex:
+  - title: "카테고리별 게시물"
+    children:
+      - title: "TDD"
+        url: /categories/#tdd
+      - title: "spring-boot"
+        url: /categories/#spring-boot
+      - title: "C++"
+        url: /categories/#c++
+      - title: "database"
+        url: /categories/#database
+      - title: "java"
+        url: /categories/#java
+      - title: "groovy"
+        url: /categories/#groovy

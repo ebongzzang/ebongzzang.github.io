@@ -262,8 +262,6 @@ defaults:
       related: true
       toc: true
       toc_label: "목차"
+      toc_sticky: true
       sidebar:
-        - title: "카테고리"
-          children:
-            - title: tdd 
-              url: /categories/#tdd
+        nav: "categoryindex"
