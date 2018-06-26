@@ -1,11 +1,6 @@
 ---
-layout: single
-type: posts
-author_profile: true
-read_time:true
-comments:false
-toc: true
-toc_label: "목차"
+date: 2018-03-14T19:12:33+00:00
+category: tdd
 ---
 
 # TEST
