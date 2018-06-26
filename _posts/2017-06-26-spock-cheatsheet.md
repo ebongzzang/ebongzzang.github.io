@@ -3,9 +3,7 @@ date: 2018-03-14T19:12:33+00:00
 category: tdd
 ---
 
-<p class="notice--danger">
-읽다가 지루할수도 있습니다
-</p>
+읽다가 지루할수도 있습니다{: .notice--danger}
 
 # TEST
 ## TEST2
