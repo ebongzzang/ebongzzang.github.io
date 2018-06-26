@@ -10,7 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
+#theme                  : "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark"
 
 # Site Settings
@@ -261,3 +262,8 @@ defaults:
       related: true
       toc: true
       toc_label: "목차"
+      sidebar:
+        - title: "카테고리"
+          children:
+            - title: tdd 
+              url: /categories/#tdd
