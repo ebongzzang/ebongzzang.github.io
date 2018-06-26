@@ -4,5 +4,11 @@
 
 @charset "utf-8";
 
+$serif              : "Nanum Gothic", Georgia, Times, serif;
+$sans-serif-narrow  : "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+
+$global-font-family : $serif;
+$header-font-family : $sans-serif-narrow;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
