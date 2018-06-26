@@ -10,3 +10,9 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  #
+category:
+  - title: "카테고리"
+  children:
+    - title: "naver"
+      url: /
