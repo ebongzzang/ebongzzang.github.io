@@ -4,6 +4,9 @@ category: tdd
 sidebar:
     nav: "category"
 ---
+<p class="notice--danger">
+읽다가 지루할수도 있습니다
+</p>
 
 # TEST
 ## TEST2
