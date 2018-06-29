@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "ebong note"
+title                    : "ebong-note"
 title_separator          : "-"
 name                     : "ebongzzang"
 description              : "뚝딱뚝딱 공사중"
