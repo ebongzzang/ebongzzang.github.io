@@ -4,4 +4,4 @@ gem "minimal-mistakes-jekyll"
 gem "jekyll-gist"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-archives", group: :jekyll_plugins
-gem 'ruby-oembed', '~> 0.12.0'
+gem "jekyll_oembed", group: :jekyll_plugins

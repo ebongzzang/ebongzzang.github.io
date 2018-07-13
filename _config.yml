@@ -211,7 +211,7 @@ plugins:
   - jemoji
   - jekyll-gist
   - jekyll-archives
-  - ruby-oembed
+  - jekyll_oembed
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
