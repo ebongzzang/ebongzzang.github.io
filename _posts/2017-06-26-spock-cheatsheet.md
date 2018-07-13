@@ -15,3 +15,4 @@ print "hi"
 ```
 
 {% gist 6aa4bbce5fc056db43099e9151f4cf02 %}
+{{ oembded  https://www.slideshare.net/ssusere865c7/not-only-sql-72403637 }}
