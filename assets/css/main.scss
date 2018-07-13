@@ -28,7 +28,7 @@ $base0E: #C792EA;
 $base0F: #FF5370;
 
 /* Custom Font size */ 
-$type-size-4: 1.188em;
+$type-size-4 : 1.188em;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
 @import "minimal-mistakes"; 
