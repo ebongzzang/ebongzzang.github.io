@@ -151,7 +151,7 @@ Node::Node(int data) {
 | uncle       | 삼촌     | gradparent-> right or left  |
 
 
-```Cpp
+```cpp
 Node *RbTree::getParent(Node *&node) {
     return node->parent;
 }
@@ -252,7 +252,7 @@ Node *RbTree::insertBST(Node *&root, Node *&newNode) {
 
 #### 리밸런싱
 트리 회전 + 색상 속성을 유지하기 위한 recoloring 과정을 거친다.
-```
+```cpp
 void RbTree::fixInsertRBTree(Node *&node) {
     Node *parent = nullptr;
     Node *grandparent = nullptr;
