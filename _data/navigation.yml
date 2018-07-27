@@ -15,26 +15,28 @@ categoryindex:
     children:
       - title: "TDD"
         url: /categories/#tdd
-      - title: "spring-boot"
-        url: /categories/#spring-boot
       - title: "C++"
         url: /categories/#c++
       - title: "database/sql"
         url: /categories/#database
       - title: "java"
         url: /categories/#java
-      - title: "groovy"
-        url: /categories/#groovy
+        children:
+          - title: "spring-boot"
+            url: /categories/#spring-boot
+          - title: "groovy"
+            url: /categories/#groovy
+          - title: "scala"
+            url: /categories/#scala
       - title: "git"
         url: /categories/#git
       - title: "algorithm"
         url: /categories/#algorithm
-      - title: "scala"
-        url: /categories/#scala
-      - title: "nodejs"
-        url: /categories/#nodejs
       - title: "javascript"
         url: /categories/#javascript
+        children:
+          - title: "nodejs"
+            url: /categories/#nodejs
       - title: "linux"
         url: /categories/#linux
       - title: "software"
