@@ -550,10 +550,13 @@ AVL, RB 트리 모두 self-balanced 트리로써 삽입할 때 리밸런싱을 �
  `RB Tree`의 경우 color가 추가 되었기 때문에 무조건 트리를 회전하는 것이 아니라 색깔만 바꾸는 등의 방법으로  좀 더 느슨하게 리밸런싱 하므로 트리 회전 횟수가 감소된다.
 
 그래서 삽입, 삭제할때의 시간복잡도에서 차이를 보이게 되는데
-`AVL Tree`, `RB-Tree` 둘다 $$ O(\log N)$$ 의 복잡도를 가지지만 `RB-Tree`를 실제로 구현할때는 `2-3 tree` 와 같이 포인터만 바꿔주면 되고, `AVL-TREE`와 같이 재귀를 사용하지 않아 CPU에 부담이 적다.
+`AVL Tree`, `RB-Tree` 둘다 $$ O(\log N)$$ 의 복잡도를 가지지만 `RB-Tree`는 삽입 한번당 관점에서 보면 실제로 구현할때는 `2-3 tree` 와 같이 색상 포인터만 바꿔 $$ O(1) $$ 경우도 있고,
+ `AVL-TREE`와 같이 재귀를 무조건 사용하지 않아 CPU의 오버헤드가 적기 때문에 일반적으로 선호된다.
 
-$$ O(1) $$ 의 시간복잡도를 보증한다. 아래는 원문
 
+아래는 원문
+
+<details><summary markdown="span"><code>원문</code></summary>
 >RB-Trees are, as well as AVL trees, self-balancing. Both of them provide O(log n) lookup and insertion performance.
 
 > The difference is that RB-Trees guarantee O(1) rotations per insert operation. That is what actually costs performance in real implementations.
@@ -568,14 +571,21 @@ $$ O(1) $$ 의 시간복잡도를 보증한다. 아래는 원문
 > For some kinds of binary search trees, including red-black trees but not AVL trees, the "fixes" to the tree can fairly easily be predicted on the way down and performed during a single top-down pass, making the second pass unnecessary. Such insertion algorithms are typically implemented with a loop rather than recursion, and often run slightly faster in practice than their two-pass counterparts.
 
 > **So a RedBlack tree insert can be implemented without recursion, on some CPUs recursion is very expensive if you overrun the function call cache (e.g SPARC due to is use of Register window)**
+</details>
+
 
 ### 왜 RB tree가 AVL tree보다 많이 쓰일까
 
 두 트리 모두 삽입, 삭제, 검색시 $$ O(\log N)$$ 의 시간이 소요되는건 똑같다.
 
-결론적으론 RB tree가 삽입, 삭제에 유리하고 AVL 트리가 검색에 유리하지만 실제로 만드는 프로그램에선 삽입, 삭제가 빈번하게 일어나므로 RBTree가 주로 선택받는것이다.
+하지만 `AVL tree`는 트리의 밸런스가 좀 더 엄격하게 유지되기 때문에 탐색에 유리하고
+
+`RB tree` 는 밸런싱을 느슨하게 하기 때문에 `AVL tree`에 비해  탐색엔 불리하지만 삽입, 삭제에 유리하다.
+
 
 아래는 원문
+
+<details><summary markdown="span"><code>원문</code></summary>
 
 Advantages of using AVL:
 
@@ -590,3 +600,15 @@ Advantages of using RBT:
 **AVL performs well on look-ups.**
 
 **But in real life applications data needs to be added, removed therefore RBT is preferred over AVL.**
+
+</details>
+
+
+
+## 결론
+
+ AVL 트리가 검색에 유리하지만 현실에서의 프로그램에서는 데이터의 삽입, 삭제가 빈번하게 일어나므로 
+ 
+ RBTree가 주로 선택받게 된다.
+
+ 
