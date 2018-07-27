@@ -19,9 +19,23 @@ categoryindex:
         url: /categories/#spring-boot
       - title: "C++"
         url: /categories/#c++
-      - title: "database"
+      - title: "database/sql"
         url: /categories/#database
       - title: "java"
         url: /categories/#java
       - title: "groovy"
         url: /categories/#groovy
+      - title: "git"
+        url: /categories/#git
+      - title: "algorithm"
+        url: /categories/#algorithm
+      - title: "scala"
+        url: /categories/#scala
+      - title: "nodejs"
+        url: /categories/#nodejs
+      - title: "javascript"
+        url: /categories/#javascript
+      - title: "linux"
+        url: /categories/#linux
+      - title: "software"
+        url: /categories/#software
