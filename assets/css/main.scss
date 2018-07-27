@@ -27,8 +27,9 @@ $base0D: #82AAFF;
 $base0E: #C792EA;
 $base0F: #FF5370;
 
-/* Custom Font size */ 
-$type-size-4 : 1.188em;
+$code-background-color: #FEF7CA !default;
 
+/* Custom Font size */ 
+// $type-size-4: 1.188em !default;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
 @import "minimal-mistakes"; 
