@@ -31,5 +31,6 @@ $code-background-color: #FEF7CA !default;
 
 /* Custom Font size */ 
 // $type-size-4: 1.188em !default;
+@import "bigfoot-default";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
 @import "minimal-mistakes"; 

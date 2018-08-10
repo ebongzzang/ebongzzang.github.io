@@ -8,7 +8,9 @@ categories:
 
 **요약 : 경우에 따라 다르지만, 특별한 이유가 없다면 i++ 대신 ++i를 쓰세요**
 
-[우선 C부터 알아보자면](http://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c/24887#24887), 컴파일러와 시스템에 따라 다르지만 대부분 차이는 없다.  하지만 사실은 잠재적(?)으로 i++이 ++i보다 느리다.
+[우선 C부터 알아보자면](http://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c/24887#24887), 컴파일러와 시스템에 따라 다르지만 대부분 차이는 없다.  하지만 사실은 잠재적(?)으로 i++이 ++i보다 느리다. [^1]
+
+[^1]: 사실 뇌피셜이다 (사실 각주 테스트다ㅎ)
 
 왜냐하면 후위연산이 이루어지기 전의 값을 저장하기 위해 임시변수를 만들기 때문이다. 하지만 요즘 컴파일러들은 최적화 옵션이 켜져 있으면,
 
